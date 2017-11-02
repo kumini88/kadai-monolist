@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find_by(params[:id])
+    @items = @user.items.uniq
+    @count_want = @user.want_items.count
   end
 
   def new
