@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :new, :create]
   
   resources :items, only: [:show, :new]
-  resources :ownership, only: [:create, :destroy]
+  resources :ownerships, only: [:create, :destroy]
 end
